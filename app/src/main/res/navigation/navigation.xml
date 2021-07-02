@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.moveeapp.ui.modules.main.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_tvSeriesDetailsFragment"
+            app:destination="@id/tvSeriesDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_castDetailsFragment"
+            app:destination="@id/castDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.example.moveeapp.ui.modules.details.view.MovieDetailsFragment"
+        android:label="fragment_movie_details"
+        tools:layout="@layout/fragment_movie_details" >
+        <argument
+            android:name="myMovie"
+            app:argType="com.example.moveeapp.data.model.tmdb.Movie" />
+        <action
+            android:id="@+id/action_movieDetailsFragment_to_castDetailsFragment"
+            app:destination="@id/castDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvSeriesDetailsFragment"
+        android:name="com.example.moveeapp.ui.modules.details.view.TvSeriesDetailsFragment"
+        android:label="fragment_tv_series_details"
+        tools:layout="@layout/fragment_tv_series_details" >
+        <argument
+            android:name="myTvSeries"
+            app:argType="com.example.moveeapp.data.model.tmdb.TvSeries" />
+        <action
+            android:id="@+id/action_tvSeriesDetailsFragment_to_castDetailsFragment"
+            app:destination="@id/castDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/castDetailsFragment"
+        android:name="com.example.moveeapp.ui.modules.details.view.CastDetailsFragment"
+        android:label="CastDetailsFragment" >
+        <argument
+            android:name="myCast"
+            app:argType="com.example.moveeapp.data.model.tmdb.Cast" />
+        <action
+            android:id="@+id/action_castDetailsFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.moveeapp.ui.modules.login.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.moveeapp.ui.modules.map.view.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.moveeapp.ui.modules.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

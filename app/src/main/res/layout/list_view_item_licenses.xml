@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/margin_16">
+
+    <TextView
+        android:id="@+id/list_view_licences_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_8"
+        style="@style/Bold_Black_22"/>
+
+    <TextView
+        android:id="@+id/list_view_licences_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/list_view_licences_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_8"
+        style="@style/Bold_Black_17"/>
+
+    <TextView
+        android:id="@+id/list_view_licences_github_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/list_view_licences_copyright"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Black_15"
+        android:layout_marginTop="@dimen/margin_8"
+        android:autoLink="web"
+        android:textColorLink="@color/almost_black"/>
+
+
+    <TextView
+        android:id="@+id/list_view_licences_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/list_view_licences_github_link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/margin_8"
+        style="@style/Black_15"
+        tools:text="icerik"/>
+
+    <TextView
+        android:id="@+id/list_view_licences_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/list_view_licences_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center_vertical"
+        style="@style/Black_15"
+        android:layout_marginTop="@dimen/margin_8"
+        android:autoLink="web"
+        android:textColorLink="@color/almost_black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

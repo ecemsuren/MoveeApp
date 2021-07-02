@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".ui.modules.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/activity_splash_img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_movee_splash" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/linear_layout_margin_bottom">
+
+        <TextView
+            android:id="@+id/activity_splash_txt_we"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_splash_we"
+            style="@style/White_10"
+            android:layout_marginEnd="@dimen/text_margin_start_end"/>
+
+        <ImageView
+            android:id="@+id/activity_splash_img_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_heart"
+            android:layout_marginEnd="@dimen/text_margin_start_end"/>
+
+        <TextView
+            android:id="@+id/activity_splash_text_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/White_10"
+            android:text="@string/splash_movie" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

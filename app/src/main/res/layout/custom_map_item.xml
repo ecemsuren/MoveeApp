@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dimen_300dp"
+    android:layout_height="@dimen/dimen_150dp"
+    app:cardCornerRadius="@dimen/cardview_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_8"
+        android:paddingStart="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_20dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/location_txt_name"
+            style="@style/Black_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="@integer/int_1"/>
+
+        <TextView
+            android:id="@+id/location_txt_adress"
+            style="@style/Text_Size_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:maxLines="@integer/int_1" />
+
+        <TextView
+            android:id="@+id/location_txt_website"
+            style="@style/Bold_Vibrant_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:maxLines="@integer/int_1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@color/view_background"/>
+
+        <Button
+            android:id="@+id/location_button_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/shape"
+            android:drawableStart="@drawable/ic_map_button_go"
+            android:text="@string/map_item_go"
+            style="@style/Bold_White_10">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

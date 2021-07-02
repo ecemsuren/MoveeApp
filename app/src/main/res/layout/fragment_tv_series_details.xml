@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="detailTv"
+            type="com.example.moveeapp.ui.modules.details.viewModel.TvSeriesDetailsViewModel" />
+
+    </data>
+
+<androidx.core.widget.NestedScrollView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvSeries_nested_scroll"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:fitsSystemWindows="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.modules.details.view.TvSeriesDetailsFragment">
+
+        <ImageView
+            android:id="@+id/tv_series_details_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_img_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/like_linearLayout"
+            android:layout_width="@dimen/dimens_35dp"
+            android:layout_height="@dimen/dimens_35dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/dimens_32dp"
+            android:background="@drawable/shape_map"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="parent"
+                android:src="@drawable/ic_icon_unliked_heart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_linear_layout"
+            android:layout_width="@dimen/linearlayout_width"
+            android:layout_height="@dimen/linearlayout_height"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/linear_layout_margin_top"
+            android:background="@drawable/shape"
+            android:padding="@dimen/margin_top_bottom_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/tvSeries_details_vote_img"
+                android:layout_width="@dimen/vote_img_width"
+                android:layout_height="@dimen/vote_img_height"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/tvSeries_details_txt_vote"
+                style="@style/Bold_White_10"
+                android:layout_width="@dimen/vote_txt_width"
+                android:layout_height="@dimen/vote_img_height"
+                android:layout_marginStart="@dimen/txt_margin_start" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSeries_details_title"
+            style="@style/Bold_Black_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintTop_toBottomOf="@id/details_linear_layout" />
+
+        <TextView
+            android:id="@+id/tvSeries_details_genre"
+            style="@style/Black_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintTop_toBottomOf="@id/tvSeries_details_title" />
+
+        <LinearLayout
+            android:id="@+id/details_linear_layout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSeries_details_genre">
+
+            <ImageView
+                android:id="@+id/img_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/details_txt_time"
+                style="@style/Black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_8" />
+
+            <ImageView
+                android:id="@+id/img_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_8"
+                android:src="@drawable/main_screen_img_calendar" />
+
+            <TextView
+                android:id="@+id/details_txt_realise_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_start_end"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_linear_img_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_linear_layout_time">
+
+            <ImageView
+                android:id="@+id/detail_img_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_8"
+                android:src="@drawable/ic_rate"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/details_txt_rate"
+                style="@style/Black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/details_rate" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_linear_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/details_linear_img_rate"
+            app:layout_constraintTop_toBottomOf="@id/details_linear_layout_time">
+
+            <View
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/view_background" />
+
+            <RatingBar
+                android:id="@+id/movie_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="@integer/int_1"
+                android:visibility="gone"
+                android:progressTint="@color/vibrant_blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_linear_img_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/details_linear_img_rate"
+            app:layout_constraintTop_toBottomOf="@+id/details_linear_layout_time">
+
+            <ImageView
+                android:id="@+id/details_img_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                style="@style/Black_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/details_share" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSeries_detail_overview"
+            style="@style/Black_17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/padding_margin_start_end"
+            android:scrollbars="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_linear_img_rate" />
+
+        <LinearLayout
+            android:id="@+id/details_seasons_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSeries_detail_overview"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@drawable/shape_season"
+            android:padding="@dimen/margin_top_bottom_start">
+
+            <TextView
+                android:id="@+id/details_seasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                style="@style/Bold_White_12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/details_creator_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_seasons_linear_layout">
+
+            <TextView
+                android:id="@+id/details_txt_creators"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/creators"
+                style="@style/Almost_Black_16"/>
+
+
+            <TextView
+                android:id="@+id/details_txt_creators_name"
+                style="@style/Vibrant_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_8" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_txt_Cast"
+            style="@style/Bold_Black_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_margin_start_end"
+            android:layout_marginTop="@dimen/margin_8"
+            android:text="@string/cast"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_creator_linear_layout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movie_details_cast_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_txt_Cast" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</layout>

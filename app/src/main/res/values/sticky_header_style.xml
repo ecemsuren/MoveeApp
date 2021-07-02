@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sticky_header_style">
+       <item name="android:textSize" >17sp</item>
+       <item name="android:textColor">@color/colorWhite</item>
+       <item name="android:background">@color/vibrant_blue</item>
+   </style>
+</resources>

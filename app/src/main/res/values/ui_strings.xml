@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_splash_we">We</string>
+    <string name="splash_movie">movie</string>
+    <string name="main_movies">Movies</string>
+    <string name="popularName">POPULAR</string>
+</resources>

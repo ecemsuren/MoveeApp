@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="movie"
+            type="com.example.moveeapp.ui.modules.main.viewModel.MainActivityViewModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:layout_marginStart="@dimen/padding_margin_start_end"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/padding_margin_start_end"
+        android:layout_marginBottom="@dimen/margin_16"
+        app:cardCornerRadius="@dimen/cardview_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/tv_series_image"
+                android:layout_width="@dimen/cardview_movie_img_width"
+                android:layout_height="@dimen/dimen_100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_8"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/tv_series_image"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvseries_text"
+                    style="@style/Black_20"
+                    android:layout_width="@dimen/dimens_234dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="@integer/int_1" />
+
+                <ImageView
+                    android:id="@+id/movie_img_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:src="@drawable/ic_icon_like_heart" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recyclerview_txt_search_genre_and_films"
+                style="@style/Text_Size_15"
+                android:layout_width="@dimen/dimens_234dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:maxLines="@integer/int_1"
+                app:layout_constraintStart_toStartOf="@+id/linear_layout_movie_name"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_movie_name" />
+
+            <ImageView
+                android:id="@+id/recyclerview_img_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_start_end"
+                android:layout_marginBottom="@dimen/img_txt_margin_bottom"
+                android:src="@drawable/main_screen_img_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recyclerview_txt_search_genre_and_films"
+                app:layout_constraintTop_toBottomOf="@id/recyclerview_txt_search_genre_and_films" />
+
+            <TextView
+                android:id="@+id/activity_recyclerview_txt_date"
+                style="@style/Text_Size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_start_end"
+                android:layout_marginTop="@dimen/cardview_txt_date_margin_top"
+                android:layout_marginBottom="@dimen/img_txt_margin_bottom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/recyclerview_img_type"
+                app:layout_constraintTop_toBottomOf="@id/recyclerview_txt_search_genre_and_films" />
+
+            <LinearLayout
+                android:layout_width="@dimen/linearlayout_width"
+                android:layout_height="@dimen/linearlayout_height"
+                android:layout_marginStart="@dimen/text_margin_start_end"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/linearlayout_margin_end"
+                android:layout_marginBottom="@dimen/txt_height_margin_bottom"
+                android:background="@drawable/shape"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/activity_recyclerview_txt_date"
+                app:layout_constraintTop_toBottomOf="@id/recyclerview_txt_search_genre_and_films">
+
+                <ImageView
+                    android:layout_width="@dimen/vote_img_width"
+                    android:layout_height="@dimen/vote_img_height"
+                    android:layout_marginStart="@dimen/text_margin_start_end"
+                    android:layout_marginTop="@dimen/margin_top_bottom_start"
+                    android:layout_marginBottom="@dimen/margin_top_bottom_start"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/activity_recyclerview_txt_vote"
+                    style="@style/Bold_White_10"
+                    android:layout_width="@dimen/vote_txt_width"
+                    android:layout_height="@dimen/vote_img_height"
+                    android:layout_marginStart="@dimen/margin_top_bottom_start"
+                    android:layout_marginTop="@dimen/margin_top_bottom_start"
+                    android:layout_marginEnd="@dimen/text_margin_start_end"
+                    android:layout_marginBottom="@dimen/margin_top_bottom_start" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
+
+
+
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/colorWhite">
+    </solid>
+    <stroke
+        android:color="@color/colorWhite">
+    </stroke>
+    <corners
+        android:topLeftRadius="@dimen/shape_search_radius"
+        android:topRightRadius="@dimen/shape_search_radius"
+        android:bottomLeftRadius="@dimen/shape_search_radius"
+        android:bottomRightRadius="@dimen/shape_search_radius">
+    </corners>
+</shape>

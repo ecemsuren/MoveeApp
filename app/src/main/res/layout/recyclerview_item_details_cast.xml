@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/cardview_txt_date_margin_top">
+    
+    <ImageView
+        android:id="@+id/details_cast_img"
+        android:layout_width="@dimen/dimen_70dp"
+        android:layout_height="@dimen/dimen_70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:id="@+id/details_cast_txt_name"
+        android:layout_width="@dimen/dimen_70dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/details_cast_img"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        style="@style/Almost_Black_16"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

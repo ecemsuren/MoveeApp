@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name"> Movee</string>
+    <string name="failed">Failed</string>
+    <string name="movies">Movies: </string>
+    <string name="genres">Genres: </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="creators">Creators:</string>
+    <string name="cast">Cast</string>
+    <string name="director">Director:</string>
+    <string name="writers">Writers:</string>
+    <string name="stars">Stars:</string>
+    <string name="cast_born">Born:</string>
+    <string name="cast_details_movies">Movies</string>
+    <string name="cast_see_full_bio"><![CDATA[See full bio >>]]></string>
+    <string name="txt_search">Search</string>
+    <string name="txt_profile">Profile</string>
+    <string name="hint_movies_or_series">Movies or Series</string>
+    <string name="txt_search_cancel">Cancel</string>
+    <string name="login_screen_email">Email</string>
+    <string name="login_screen_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="guest_button">Guest</string>
+    <string name="login_forgot_password"><a href="https://www.themoviedb.org/reset-password">Forgot Password?</a></string>
+    <string name="profile_hello">Hello</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="login_register_now"><a href="https://www.themoviedb.org/signup">Register Now</a></string>
+    <string name="map_item_go">Go!</string>
+    <string name="cinema">Cinema</string>
+    <string name="details_rate">Rate</string>
+    <string name="details_share">Share</string>
+    <string name="about_movee">About MOVEE</string>
+    <string name="licenses">Licenses</string>
+    <string name="about_created_by">Created By: Ecem Aleyna Suren</string>
+
+
+    <integer name="maxLine_4">4</integer>
+    <integer name="int_1">1</integer>
+    <integer name="maxLine_2">2</integer>
+
+    <string name="rx_java" translatable="false">Rx Java</string>
+    <string name="rx_binding" translatable="false">Rx Binding</string>
+    <string name="lottie" translatable="false">Lottie</string>
+    <string name="glide" translatable="false">Glide</string>
+    <string name="retrofit" translatable="false">Retrofit</string>
+
+    <string name="rx_java_copyright" translatable="false">Copyright (c) 2016-present, RxJava Contributors.</string>
+    <string name="rx_binding_copyright" translatable="false">Copyright (C) 2015 Jake Wharton</string>
+    <string name="lottie_copyright" translatable="false">Copyright 2018 Airbnb, Inc.</string>
+    <string name="glide_copyright" translatable="false">Copyright 2014 Google, Inc</string>
+    <string name="retrofit_copyright" translatable="false">Copyright 2013 Square, Inc.</string>
+
+    <string name="subtitle" translatable="false">Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at</string>
+
+    <string name="rx_java_github_link" translatable="false"><a href="https://github.com/ReactiveX/RxJava">https://github.com/ReactiveX/RxJava</a></string>
+    <string name="rx_binding_github_link" translatable="false"><a href="https://github.com/JakeWharton/RxBinding">https://github.com/JakeWharton/RxBinding</a></string>
+    <string name="lottie_github_link" translatable="false"><a href="https://github.com/airbnb/lottie-android">https://github.com/airbnb/lottie-android</a></string>
+    <string name="glide_github_link" translatable="false"><a href="https://github.com/bumptech/glide">https://github.com/bumptech/glide</a></string>
+    <string name="retrofit_github_link" translatable="false"><a href="https://github.com/square/retrofit">https://github.com/square/retrofit</a></string>
+
+    <string name="apache_link" translatable="false"><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></string>
+
+
+
+</resources>

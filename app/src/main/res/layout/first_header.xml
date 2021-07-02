@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/txt_height_width"
+    android:background="@color/vibrant_blue">
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/Bold_White_34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_splash_txt_we_padding_start"
+        android:layout_marginTop="@dimen/activity_main_txt_padding_top"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/main_movies" />
+
+    <LinearLayout
+        android:id="@+id/map_linearLayout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="@dimen/activity_main_txt_padding_top"
+        android:background="@drawable/shape_map"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/header_text"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_map"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_maps_and_flags" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Movee"</string>
+    <string name="failed">Basarısız</string>
+    <string name="movies">Filmler: </string>
+    <string name="genres">Türler: </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="creators">Yaratıcılar:</string>
+    <string name="cast">Oyuncular</string>
+    <string name="director">Yönetmen:</string>
+    <string name="writers">Yazarlar:</string>
+    <string name="stars">Yıldızlar:</string>
+    <string name="cast_born">Doğum Tarihi:</string>
+    <string name="cast_details_movies">Filmler</string>
+    <string name="cast_see_full_bio"><![CDATA[Tüm Biografiyi Gör >>]]></string>
+    <string name="txt_search">Arama</string>
+    <string name="txt_profile">Profil</string>
+    <string name="hint_movies_or_series">Filmler veya TV Dizileri</string>
+    <string name="txt_search_cancel">İptal</string>
+    <string name="login_screen_email">Email</string>
+    <string name="login_screen_password">Şifre</string>
+    <string name="login_button">Giriş</string>
+    <string name="guest_button">Misafir</string>
+    <string name="login_forgot_password"><a href="https://www.themoviedb.org/reset-password">Şifreni mi Unuttun?</a></string>
+    <string name="profile_hello">Merhaba</string>
+    <string name="don_t_have_an_account">Hesabın Yok mu?</string>
+    <string name="login_register_now"><a href="https://www.themoviedb.org/signup">Şimdi Kayıt Ol</a></string>
+    <string name="map_item_go">Git!</string>
+    <string name="cinema">Sinema</string>
+    <string name="details_rate">Oyla</string>
+    <string name="details_share">Paylaş</string>
+    <string name="about_movee">MOVEE Hakkında</string>
+    <string name="licenses">Açık Kaynak Lisansları</string>
+    <string name="about_created_by">Yaratıcı: Ecem ALeyna Suren</string>
+</resources>

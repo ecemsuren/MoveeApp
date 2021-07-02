@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.modules.map.view.MapsFragment">
+
+    <TextView
+        android:id="@+id/map_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/vibrant_blue"
+        android:text="@string/cinema"
+        style="@style/Bold_White_24"
+        android:paddingStart="@dimen/dimen_70dp"
+        android:paddingTop="@dimen/dimen_50dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/map_linear_layout"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

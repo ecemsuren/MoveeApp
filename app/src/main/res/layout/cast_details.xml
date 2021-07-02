@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="castDetails"
+            type="com.example.moveeapp.ui.modules.details.viewModel.CastDetailsViewModel" />
+
+    </data>
+
+
+<androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cast_details_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_img_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/cast_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cast_details_img"
+        android:layout_marginStart="@dimen/padding_margin_start_end"
+        android:layout_marginTop="@dimen/margin_8"
+        style="@style/Bold_Black_22" />
+
+    <TextView
+        android:id="@+id/cast_details_txt_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cast_details_name"
+        android:layout_marginStart="@dimen/padding_margin_start_end"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/padding_margin_start_end"
+        android:scrollbars="vertical"
+        style="@style/Black_17"
+        android:maxLines="@integer/maxLine_4"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/cast_details_view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cast_details_txt_overview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/padding_margin_start_end"
+        android:layout_marginTop="@dimen/margin_8"
+        android:gravity="center_vertical"
+        style="@style/Vibrant_17"
+        android:text="@string/cast_see_full_bio"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/cast_details_linear_born"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_margin_start_end"
+        android:layout_marginTop="@dimen/margin_8"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cast_details_view_more">
+
+        <TextView
+            android:id="@+id/cast_txt_born"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_txt_height_margin_top"
+            android:gravity="center_vertical"
+            style="@style/Bold_Black_16"
+            android:text="@string/cast_born" />
+
+
+        <TextView
+            android:id="@+id/cast_born_date"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_txt_height_margin_top"
+            android:layout_marginStart="@dimen/margin_8"
+           android:gravity="center_vertical"
+            style="@style/Almost_Black_16"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/details_txt_Movies"
+        style="@style/Bold_Black_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cast_details_linear_born"
+        android:layout_marginStart="@dimen/padding_margin_start_end"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/cast_details_movies"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movie_details_cast_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/details_txt_Movies"
+        android:layout_marginTop="@dimen/margin_8"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+</layout>
